@@ -28,7 +28,7 @@ export class PkoAmbulanceWlList {
         this.errorMessage = `Cannot retrieve list of waiting patients: ${response.statusText}`
       }
     } catch (err: any) {
-      this.errorMessage = `Cannot retrieve list of waiting patients: ${err.message || "unknown"}`
+      this.errorMessage = `Cannot retrieve list of avaliable vaccinations patients: ${err.message || "unknown"}`
     }
     return [];
   }
