@@ -277,7 +277,7 @@ components:
   schemas:
     WaitingListEntry:
       type: object
-      required: [id, patientId, waitingSince, estimatedDurationMinutes]
+      required: [id, patientId, waitingSince, estimatedDurationMinutes, nameOfVaccine]
       properties:
         id:
           type: string
@@ -287,6 +287,10 @@ components:
           type: string
           example: Jožko Púčik
           description: Name of patient in waiting list
+        nameOfVaccine:
+          type: string
+          example: Moderna
+          description: Name of the available vaccination
         patientId:
           type: string
           example: 460527-jozef-pucik

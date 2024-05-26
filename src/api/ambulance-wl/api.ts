@@ -110,6 +110,12 @@ export interface WaitingListEntry {
      */
     'name'?: string;
     /**
+     * Name of the available vaccination
+     * @type {string}
+     * @memberof WaitingListEntry
+     */
+    'nameOfVaccine': string;
+    /**
      * Unique identifier of the patient known to Web-In-Cloud system
      * @type {string}
      * @memberof WaitingListEntry

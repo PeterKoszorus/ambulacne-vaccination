@@ -44,7 +44,7 @@ export class PkoAmbulanceWlList {
               <md-list-item onClick={() => this.entryClicked.emit(patient.id)}>
                 <div slot="headline">{patient.name}</div>
                 <div
-                  slot="supporting-text">{"Predpokladaný vstup: " + this.isoDateToLocale(patient.estimatedStart)}</div>
+                  slot="supporting-text">{"Objednaný na vakcínu: " + patient.nameOfVaccine }</div>
                 <md-icon slot="start">person</md-icon>
               </md-list-item>
             )}

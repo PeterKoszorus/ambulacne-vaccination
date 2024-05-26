@@ -39,7 +39,8 @@ export class PkoAmbulanceWlEditor {
         id: "@new",
         patientId: "",
         waitingSince: new Date().toISOString(),
-        estimatedDurationMinutes: 15
+        estimatedDurationMinutes: 15,
+        nameOfVaccine: ""
       };
       this.entry.estimatedStart = (await this.assumedEntryDateAsync()).toISOString();
       return this.entry;

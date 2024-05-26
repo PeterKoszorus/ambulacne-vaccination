@@ -422,7 +422,8 @@
           "id",
           "patientId",
           "waitingSince",
-          "estimatedDurationMinutes"
+          "estimatedDurationMinutes",
+          "nameOfVaccine"
         ],
         "properties": {
           "id": {
@@ -434,6 +435,11 @@
             "type": "string",
             "example": "Jožko Púčik",
             "description": "Name of patient in waiting list"
+          },
+          "nameOfVaccine": {
+            "type": "string",
+            "example": "Moderna",
+            "description": "Name of the available vaccination"
           },
           "patientId": {
             "type": "string",
